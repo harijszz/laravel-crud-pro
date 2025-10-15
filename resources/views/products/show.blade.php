@@ -1,5 +1,6 @@
-<h1>{{ $singleProduct->name }}</h1>
-<h4>Quantity: {{ $singleProduct->quantity }}</h4>
-<p>{{ $singleProduct->description }}</p>
 
-<a href="/products">Back to all product list</a>
+<h1>{{ $product->name }}</h1>
+<p>{{ $product->description }}</p>
+<p>{{ $product->description }}</p>
+
+ <a href="{{ route('products.index') }}">Back to all product list</a>
