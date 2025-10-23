@@ -1,81 +1,17 @@
-/* Reset some basic elements */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 2rem;
-    color: #333;
+.holy-grail-grid {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "left-sidebar main-content right-sidebar"
+    "footer footer footer";
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
-/* Style for the product list */
-ul {
-    list-style: none;
-    padding: 0;
-    max-width: 800px;
-    margin: 0 auto;
-}
+.header         { grid-area: header; background: #f8f9fa; padding: 1rem; }
+.main-content   { grid-area: main-content; background: #fff; padding: 1rem; }
+.left-sidebar   { grid-area: left-sidebar; background: #e9ecef; padding: 1rem; }
+.right-sidebar  { grid-area: right-sidebar; background: #e9ecef; padding: 1rem; }
+.footer         { grid-area: footer; background: #f1f3f5; padding: 1rem; text-align: center; }
 
-li {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 1.2rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-/* Product title */
-li h1 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Product description */
-li p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 1rem;
-}
-
-/* Links and buttons */
-a, input[type="submit"] {
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
-}
-
-/* Buttons and links style */
-a {
-    background-color: #3498db;
-    color: #fff;
-}
-
-a:hover {
-    background-color: #2980b9;
-}
-
-input[type="submit"] {
-    background-color: #e74c3c;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #c0392b;
-}
-
-/* Footer links (create + home) */
-a[href$="create"], a[href="/"] {
-    margin-top: 2rem;
-    display: inline-block;
-    background-color: #2ecc71;
-}
-
-a[href$="create"]:hover, a[href="/"]:hover {
-    background-color: #27ae60;
-}
