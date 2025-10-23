@@ -1,0 +1,81 @@
+/* Reset some basic elements */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 2rem;
+    color: #333;
+}
+
+/* Style for the product list */
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Product title */
+li h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Product description */
+li p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Links and buttons */
+a, input[type="submit"] {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Buttons and links style */
+a {
+    background-color: #3498db;
+    color: #fff;
+}
+
+a:hover {
+    background-color: #2980b9;
+}
+
+input[type="submit"] {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #c0392b;
+}
+
+/* Footer links (create + home) */
+a[href$="create"], a[href="/"] {
+    margin-top: 2rem;
+    display: inline-block;
+    background-color: #2ecc71;
+}
+
+a[href$="create"]:hover, a[href="/"]:hover {
+    background-color: #27ae60;
+}
